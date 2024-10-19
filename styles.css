@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: url(cat-img/petshop.jpg);
+    max-width: 1920px;
+    color: black;
+    padding: 20px 0;
+    height: 260px;
+    font-weight: 700;
+}
+
+header h1 {
+    margin: 0;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    margin: 0 0 20px;
+}
+
+.btn {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.products {
+    padding: 40px 0;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    flex: 1 1 calc(33% - 20px);
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about, .contact {
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .product-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        flex: 1 1 100%;
+    }
+}
